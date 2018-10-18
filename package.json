@@ -1,6 +1,6 @@
 {
-  "name": "pm2-prometheus-exporter",
-  "version": "0.1.1",
+  "name": "pm2-exporter",
+  "version": "0.1.2",
   "description": "PM2 metric exporter for Prometheus",
   "main": "exporter.js",
   "dependencies": {
@@ -9,11 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tgmproject/pm2-prometheus-exporter.git"
+    "url": "https://github.com/DavidWittman/pm2-prometheus-exporter.git"
   },
   "config": {
-    "conf_var_1": true,
-    "conf_var_2": "myvalue"
   },
   "apps": [
     {
@@ -22,6 +20,6 @@
       "script": "exporter.js"
     }
   ],
-  "author": "Jan Stránský <jan.stransky@arnal.cz>",
+  "author": "David Wittman",
   "license": "BSD"
 }

@@ -1,10 +1,13 @@
-# pm2-prometheus-exporter
+# pm2-exporter
+
+This is a fork of [burningtree/pm2-prometheus-exporter](https://github.com/burningtree/pm2-prometheus-exporter) primarily to fix [an issue with misreporting restarts](https://github.com/burningtree/pm2-prometheus-exporter/pull/2).
 
 ## Installation
 
 ```shell
-pm2 install pm2-prometheus-exporter
+pm2 install pm2-exporter
 ```
 
-## Author
+## Authors
 * Jan Stránský &lt;jan.stransky@arnal.cz&gt;
+* David Wittman
