@@ -37,7 +37,11 @@ function metrics () {
         instance: p.pm2_env.NODE_APP_INSTANCE
       }
       let loopDelay = p.pm2_env.axm_monitor['Loop delay']
-        ? p.pm2_env.axm_monitor['Loop delay'].value : false
+        ? p.pm2_env.axm_monitor['Loop delay'].value : false;
+      // Newer versions of PM2 use "Event Loop Latency" instead of "Loop delay"
+      if (loopDelay === false && p.pm2_env.axm_monitor['Event Loop Latency']) {
+          loopDelay = p.pm2_env.axm_monitor['Event Loop Latency'].value;
+      }
       let values = {
         up: p.pm2_env.status === 'online' ? 1 : 0,
         cpu: p.monit.cpu,
