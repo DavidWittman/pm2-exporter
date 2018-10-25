@@ -1,6 +1,6 @@
 {
   "name": "pm2-exporter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "PM2 metric exporter for Prometheus",
   "main": "exporter.js",
   "dependencies": {
@@ -11,8 +11,7 @@
     "type": "git",
     "url": "https://github.com/DavidWittman/pm2-prometheus-exporter.git"
   },
-  "config": {
-  },
+  "config": {},
   "apps": [
     {
       "merge_logs": true,
